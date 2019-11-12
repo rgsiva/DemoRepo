@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="254.534156">
+<testcase classname="Telehealth Filter Result Validation based on Telehealth Provider Name Search" name="Verify Telehealth Provider Name Search" time="149.617108">
+<system-out><![CDATA[Given I am in the "Regence" brand login page of "authenticated" user experience in "QA1" environment.passed
+When I login with valid username as "TESTBLUWANWFFT" and valid Password as "password$1".passed
+And I click on Find a Doctor link and select "medicalProvider" Icon.........passed
+Then I should be landed on the HSQ Home page................................passed
+And verify the title of the HSQ Home page as "Search homepage"..............passed
+Then I Verify the location is defaulted to "1 TEST DEMO ST, SEATTL..."......passed
+And I Update the address in choose your search location as "Salt Lake City, UT" if it is found as invalid.passed
+And I click on "search_All" option..........................................passed
+And I enter the Telehealth provider name as "Scott, David W, LMFT"..........passed
+And I select the Telehealth filter..........................................passed
+Then the searched provider should be displayed with the Telehealth text "Telehealth".passed
+And I close the HSQ tab.....................................................passed
+And I Navigate back to Regence Member Dashboard Page........................passed
+And I Click on SignOut hyperlink............................................passed
+And I Closed the browser window.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Telehealth Filter Result Validation based on Telehealth Provider Name Search" name="Verify Telehealth Provider Name Search 2" time="104.917048">
+<system-out><![CDATA[Given I am in the "Asuris" brand login page of "authenticated" user experience in "QA1" environment.passed
+When I login with valid username as "TestASURASTest3" and valid Password as "password$1".passed
+And I click on Find a Doctor link and select "medicalProvider" Icon.........passed
+Then I should be landed on the HSQ Home page................................passed
+And verify the title of the HSQ Home page as "Search homepage"..............passed
+Then I Verify the location is defaulted to "10 BROWN ST, SPOKANE, ..."......passed
+And I Update the address in choose your search location as "SPOKANE, WA 99201" if it is found as invalid.passed
+And I click on "search_All" option..........................................passed
+And I enter the Telehealth provider name as "Fury, Beth A, LMHC"............passed
+And I select the Telehealth filter..........................................passed
+Then the searched provider should be displayed with the Telehealth text "Telehealth".passed
+And I close the HSQ tab.....................................................passed
+And I Navigate back to Regence Member Dashboard Page........................passed
+And I Click on SignOut hyperlink............................................passed
+And I Closed the browser window.............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

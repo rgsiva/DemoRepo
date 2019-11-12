@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="40.20384">
+<testcase classname="Telehealth Filter Result Validation based on Telehealth Provider Name Search" name="Verify Telehealth Provider Name Search" time="22.756791">
+<failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[SafariDriver: Safari on MAC (95EC3688-5815-41DD-8FB1-4CFA71EFA739)] -&gt; xpath: //input[@placeholder='User name']] (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'&#10;System info: host: 'TRG525170.regence.com', ip: 'fe80:0:0:0:87f:749c:cd7c:3a9a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'&#10;Driver info: org.openqa.selenium.safari.SafariDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 17G8037, safari:platformVersion: 10.13.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}&#10;Session ID: 95EC3688-5815-41DD-8FB1-4CFA71EFA739&#10;&#9;at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)&#10;&#9;at com.cucumbercraft.pages.RegenceAsurisBSHHomePage.clearUserName(RegenceAsurisBSHHomePage.java:193)&#10;&#9;at com.cucumbercraft.stepdefinitions.GeneralStepDefs.login(GeneralStepDefs.java:369)&#10;&#9;at com.cucumbercraft.stepdefinitions.GeneralStepDefs.i_login_with_valid_username_as_something_and_valid_password_as_something(GeneralStepDefs.java:350)&#10;&#9;at ✽.When I login with valid username as &quot;TESTBLUWANWFFT&quot; and valid Password as &quot;password$1&quot;(TC0001_RG_AS_Telehealth Filter validation based on Telehealth Provider Name Search.feature:10)&#10;"><![CDATA[Given I am in the "Regence" brand login page of "authenticated" user experience in "QA3" environment.passed
+When I login with valid username as "TESTBLUWANWFFT" and valid Password as "password$1".failed
+And I click on Find a Doctor link and select "medicalProvider" Icon.........skipped
+Then I should be landed on the HSQ Home page................................skipped
+And verify the title of the HSQ Home page as "Search homepage"..............skipped
+Then I Verify the location is defaulted to "1 TEST DEMO ST, SEATTL..."......skipped
+And I Update the address in choose your search location as "Salt Lake City, UT" if it is found as invalid.skipped
+And I click on "search_All" option..........................................skipped
+And I enter the Telehealth provider name as "Scott, David W, LMFT"..........skipped
+And I select the Telehealth filter..........................................skipped
+Then the searched provider should be displayed with the Telehealth text "Telehealth".skipped
+And I close the HSQ tab.....................................................skipped
+And I Navigate back to Regence Member Dashboard Page........................skipped
+And I Click on SignOut hyperlink............................................skipped
+And I Closed the browser window.............................................skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[SafariDriver: Safari on MAC (95EC3688-5815-41DD-8FB1-4CFA71EFA739)] -> xpath: //input[@placeholder='User name']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TRG525170.regence.com', ip: 'fe80:0:0:0:87f:749c:cd7c:3a9a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 17G8037, safari:platformVersion: 10.13.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 95EC3688-5815-41DD-8FB1-4CFA71EFA739
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at com.cucumbercraft.pages.RegenceAsurisBSHHomePage.clearUserName(RegenceAsurisBSHHomePage.java:193)
+	at com.cucumbercraft.stepdefinitions.GeneralStepDefs.login(GeneralStepDefs.java:369)
+	at com.cucumbercraft.stepdefinitions.GeneralStepDefs.i_login_with_valid_username_as_something_and_valid_password_as_something(GeneralStepDefs.java:350)
+	at ✽.When I login with valid username as "TESTBLUWANWFFT" and valid Password as "password$1"(TC0001_RG_AS_Telehealth Filter validation based on Telehealth Provider Name Search.feature:10)
+]]></failure>
+</testcase>
+<testcase classname="Telehealth Filter Result Validation based on Telehealth Provider Name Search" name="Verify Telehealth Provider Name Search 2" time="17.447049">
+<failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[SafariDriver: Safari on MAC (70AAF3DE-5ADD-4862-B15D-99B683C1B8FE)] -&gt; xpath: //input[@placeholder='User name']] (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'&#10;System info: host: 'TRG525170.regence.com', ip: 'fe80:0:0:0:87f:749c:cd7c:3a9a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'&#10;Driver info: org.openqa.selenium.safari.SafariDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 17G8037, safari:platformVersion: 10.13.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}&#10;Session ID: 70AAF3DE-5ADD-4862-B15D-99B683C1B8FE&#10;&#9;at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)&#10;&#9;at com.cucumbercraft.pages.RegenceAsurisBSHHomePage.clearUserName(RegenceAsurisBSHHomePage.java:193)&#10;&#9;at com.cucumbercraft.stepdefinitions.GeneralStepDefs.login(GeneralStepDefs.java:369)&#10;&#9;at com.cucumbercraft.stepdefinitions.GeneralStepDefs.i_login_with_valid_username_as_something_and_valid_password_as_something(GeneralStepDefs.java:350)&#10;&#9;at ✽.When I login with valid username as &quot;TestASURASTest3&quot; and valid Password as &quot;password$1&quot;(TC0001_RG_AS_Telehealth Filter validation based on Telehealth Provider Name Search.feature:10)&#10;"><![CDATA[Given I am in the "Asuris" brand login page of "authenticated" user experience in "QA3" environment.passed
+When I login with valid username as "TestASURASTest3" and valid Password as "password$1".failed
+And I click on Find a Doctor link and select "medicalProvider" Icon.........skipped
+Then I should be landed on the HSQ Home page................................skipped
+And verify the title of the HSQ Home page as "Search homepage"..............skipped
+Then I Verify the location is defaulted to "10 BROWN ST, SPOKANE, ..."......skipped
+And I Update the address in choose your search location as "SPOKANE, WA 99201" if it is found as invalid.skipped
+And I click on "search_All" option..........................................skipped
+And I enter the Telehealth provider name as "Fury, Beth A, LMHC"............skipped
+And I select the Telehealth filter..........................................skipped
+Then the searched provider should be displayed with the Telehealth text "Telehealth".skipped
+And I close the HSQ tab.....................................................skipped
+And I Navigate back to Regence Member Dashboard Page........................skipped
+And I Click on SignOut hyperlink............................................skipped
+And I Closed the browser window.............................................skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[SafariDriver: Safari on MAC (70AAF3DE-5ADD-4862-B15D-99B683C1B8FE)] -> xpath: //input[@placeholder='User name']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TRG525170.regence.com', ip: 'fe80:0:0:0:87f:749c:cd7c:3a9a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 17G8037, safari:platformVersion: 10.13.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 70AAF3DE-5ADD-4862-B15D-99B683C1B8FE
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at com.cucumbercraft.pages.RegenceAsurisBSHHomePage.clearUserName(RegenceAsurisBSHHomePage.java:193)
+	at com.cucumbercraft.stepdefinitions.GeneralStepDefs.login(GeneralStepDefs.java:369)
+	at com.cucumbercraft.stepdefinitions.GeneralStepDefs.i_login_with_valid_username_as_something_and_valid_password_as_something(GeneralStepDefs.java:350)
+	at ✽.When I login with valid username as "TestASURASTest3" and valid Password as "password$1"(TC0001_RG_AS_Telehealth Filter validation based on Telehealth Provider Name Search.feature:10)
+]]></failure>
+</testcase>
+</testsuite>

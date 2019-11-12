@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Run Test Cukes]" parallel="tests">
+  <test name="Smoke Tests using chrome(failed)" parallel="tests">
+    <parameter name="BrowserName" value="FIREFOX"/>
+    <parameter name="ExecutionMode" value="LOCAL"/>
+    <classes>
+      <class name="com.cucumbercraft.runners.RunCucumberTests_Smoke">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="beforeClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="tearDownClass"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.cucumbercraft.runners.RunCucumberTests_Smoke -->
+    </classes>
+  </test> <!-- Smoke Tests using chrome(failed) -->
+</suite> <!-- Failed suite [Run Test Cukes] -->

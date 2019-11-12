@@ -1,0 +1,781 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#@Feature1"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "I am in the login page of the application",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I login using the valid username mercury and the valid password mercury",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mercury",
+                  "offset": 33
+                },
+                {
+                  "val": "mercury",
+                  "offset": 64
+                }
+              ],
+              "location": "LoginStepDefs.i_login_using_valid_username_valid_password(String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4489911722,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CukeHooks.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Find and book flight tickets",
+        "description": "",
+        "id": "book-flight-tickets;find-and-book-flight-tickets",
+        "after": [
+          {
+            "result": {
+              "duration": 163557436,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CukeHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I search for flights using the following criteria:",
+            "match": {
+              "location": "BookFlightTicketsStepDefs.i_search_for_flights(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "FromPort",
+                  "FromMonth",
+                  "FromDate",
+                  "ToPort",
+                  "ToMonth",
+                  "ToDate",
+                  "Airline",
+                  "PassengerCount"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "London",
+                  "July",
+                  "23",
+                  "Paris",
+                  "July",
+                  "29",
+                  "Unified Airlines",
+                  "2"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I select the first available flight",
+            "match": {
+              "location": "BookFlightTicketsStepDefs.i_select_first_available_flight()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "I book the tickets using the following passenger details:",
+            "match": {
+              "location": "BookFlightTicketsStepDefs.i_book_tickets(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "FirstName",
+                  "LastName"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "Cts",
+                  "CoE"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "QA",
+                  "Automation"
+                ],
+                "line": 20
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I use the following credit card details:",
+            "match": {
+              "location": "BookFlightTicketsStepDefs.i_use_credit_card(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "CreditCardType",
+                  "CreditCardNumber"
+                ],
+                "line": 22
+              },
+              {
+                "cells": [
+                  "MasterCard",
+                  "1234567890"
+                ],
+                "line": 23
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I should get a booking confirmation with a confirmation number",
+            "match": {
+              "location": "BookFlightTicketsStepDefs.i_should_get_booking_confirmation()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@completed"
+          }
+        ]
+      }
+    ],
+    "name": "Book flight tickets",
+    "description": "As a user with valid credentials,\r\nI want to be able to search for flight tickets between a given source and destination,\r\nselect from the available options presented, and book the tickets accordingly",
+    "id": "book-flight-tickets",
+    "keyword": "Feature",
+    "uri": "BookFlightTickets.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I am in the login page of the application",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1925646601,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CukeHooks.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Login with invalid username and invalid password",
+        "description": "",
+        "id": "login;login-with-invalid-username-and-invalid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 248650278,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CukeHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I login using the invalid username abc and the invalid password xyz",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc",
+                  "offset": 35
+                },
+                {
+                  "val": "xyz",
+                  "offset": 64
+                }
+              ],
+              "location": "LoginStepDefs.i_login_using_invalid_username_invalid_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "The application should stay on the login page, and not log me in",
+            "match": {
+              "location": "LoginStepDefs.application_should_stay_on_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@completed"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I am in the login page of the application",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1967938048,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CukeHooks.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Login with valid username and invalid password",
+        "description": "",
+        "id": "login;login-with-valid-username-and-invalid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 141841322,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CukeHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I login using the valid username mercury and the invalid password xyz",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mercury",
+                  "offset": 33
+                },
+                {
+                  "val": "xyz",
+                  "offset": 66
+                }
+              ],
+              "location": "LoginStepDefs.i_login_using_valid_username_invalid_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "The application should stay on the login page, and not log me in",
+            "match": {
+              "location": "LoginStepDefs.application_should_stay_on_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@completed1"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I am in the login page of the application",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1800848748,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CukeHooks.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Login with valid username and valid password",
+        "description": "",
+        "id": "login;login-with-valid-username-and-valid-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 153357323,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CukeHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I login using the valid username mercury and the valid password mercury",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mercury",
+                  "offset": 33
+                },
+                {
+                  "val": "mercury",
+                  "offset": 64
+                }
+              ],
+              "location": "LoginStepDefs.i_login_using_valid_username_valid_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "The application should log me in and navigate to the Flight Finder page",
+            "match": {
+              "location": "LoginStepDefs.application_should_login_navigate_to_FlightFinder_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@completed1"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I am in the login page of the application",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1951492996,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CukeHooks.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Login with valid username and valid password",
+        "description": "",
+        "id": "login;login-with-valid-username-and-valid-password;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 146750255,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CukeHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I login using the valid username mercury and the valid password mercury",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mercury",
+                  "offset": 33
+                },
+                {
+                  "val": "mercury",
+                  "offset": 64
+                }
+              ],
+              "location": "LoginStepDefs.i_login_using_valid_username_valid_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "The application should log me in and navigate to the Flight Finder page",
+            "match": {
+              "location": "LoginStepDefs.application_should_login_navigate_to_FlightFinder_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@completed1"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "As a user, I want to be able to login to the application\r\nwhen I present valid credentials",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1956137894,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CukeHooks.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Register new user and login using the newly registered credentials",
+        "description": "",
+        "id": "register-new-user;register-new-user-and-login-using-the-newly-registered-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 126364769,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CukeHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "I am in the login page of the application",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I register a new user with the following details:",
+            "match": {
+              "location": "RegisterUserStepDefs.registerUser(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Username",
+                  "cts"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Password",
+                  "password-1"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "FirstName",
+                  "Cognizant"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "LastName",
+                  "John"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Phone",
+                  "1234567890"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Email",
+                  "Cognizant@cts.com"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Address",
+                  "90 Matawan Road"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "City",
+                  "Matawan"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "State",
+                  "New Jersey"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "PostalCode",
+                  "07747"
+                ],
+                "line": 18
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I should get a confirmation on successful registration",
+            "match": {
+              "location": "RegisterUserStepDefs.i_should_get_registration_confirmation()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I click on the sign in link",
+            "match": {
+              "location": "LoginStepDefs.i_click_on_signin_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I login using the valid username icims and the valid password password-1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "icims",
+                  "offset": 33
+                },
+                {
+                  "val": "password-1",
+                  "offset": 62
+                }
+              ],
+              "location": "LoginStepDefs.i_login_using_valid_username_valid_password(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "The application should log me in and navigate to the Flight Finder page",
+            "match": {
+              "location": "LoginStepDefs.application_should_login_navigate_to_FlightFinder_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@completed"
+          }
+        ]
+      }
+    ],
+    "name": "Register new user",
+    "description": "As a new user to the application, I want to be able to register myself\r\nso that I can login and use the application further",
+    "id": "register-new-user",
+    "keyword": "Feature",
+    "uri": "RegisterNewUser.feature"
+  }
+]

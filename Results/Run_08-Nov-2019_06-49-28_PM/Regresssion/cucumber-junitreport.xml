@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="6" tests="6" time="15.072497">
+<testcase classname="Book flight tickets" name="Find and book flight tickets" time="4.653469">
+<skipped><![CDATA[Given I am in the login page of the application.............................undefined
+And I login using the valid username mercury and the valid password mercury.skipped
+Given I search for flights using the following criteria:....................skipped
+And I select the first available flight.....................................skipped
+And I book the tickets using the following passenger details:...............skipped
+And I use the following credit card details:................................skipped
+Then I should get a booking confirmation with a confirmation number.........skipped
+]]></skipped>
+</testcase>
+<testcase classname="Login" name="Login with invalid username and invalid password" time="2.174297">
+<skipped><![CDATA[Given I am in the login page of the application.............................undefined
+When I login using the invalid username abc and the invalid password xyz....skipped
+Then The application should stay on the login page, and not log me in.......skipped
+]]></skipped>
+</testcase>
+<testcase classname="Login" name="Login with valid username and invalid password" time="2.109779">
+<skipped><![CDATA[Given I am in the login page of the application.............................undefined
+When I login using the valid username mercury and the invalid password xyz..skipped
+Then The application should stay on the login page, and not log me in.......skipped
+]]></skipped>
+</testcase>
+<testcase classname="Login" name="Login with valid username and valid password" time="1.954206">
+<skipped><![CDATA[Given I am in the login page of the application.............................undefined
+When I login using the valid username mercury and the valid password mercury.skipped
+Then The application should log me in and navigate to the Flight Finder page.skipped
+]]></skipped>
+</testcase>
+<testcase classname="Login" name="Login with valid username and valid password 2" time="2.098243">
+<skipped><![CDATA[Given I am in the login page of the application.............................undefined
+When I login using the valid username mercury and the valid password mercury.skipped
+Then The application should log me in and navigate to the Flight Finder page.skipped
+]]></skipped>
+</testcase>
+<testcase classname="Register new user" name="Register new user and login using the newly registered credentials" time="2.082503">
+<skipped><![CDATA[Given I am in the login page of the application.............................undefined
+When I register a new user with the following details:......................skipped
+Then I should get a confirmation on successful registration.................skipped
+When I click on the sign in link............................................skipped
+And I login using the valid username icims and the valid password password-1.skipped
+Then The application should log me in and navigate to the Flight Finder page.skipped
+]]></skipped>
+</testcase>
+</testsuite>
